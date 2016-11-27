@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>京东注册</title>
+	<meta charset="utf-8"/>
+    <style type="text/css">
+    	.main{
+    		width: 800px;
+    		padding: 20px 100px;
+    		border: 1px solid #f2f2f2;
+    		margin: 0 auto;
+    	}
+    	input{
+    		width: 300px;
+    		height:30px;
+    		font-size: 13px;
+    		padding: 3px 5px; 
+    	}
+    	input[type="checkbox"]{
+    		width: 15px;
+    		height:15px;
+    		font-size: 13px;
+    		padding: 3px 5px; 
+    	}
+    	label{
+    		width: 150px;
+    		display: inline-block;
+    	}
+    	div{
+    		padding: 5px;
+    	}
+    	.submit{
+    		width: 472px;
+    		height: 32px;
+    		font-size:14px;
+    		padding: 3px 10px;
+    	}
+    	span{
+    		color: red;
+
+    	}
+    	em{
+    		color: green;
+    	}
+    </style>
+</head>
+<body>
+<div class="main">
+	<form action="https://www.baidu.com/" id="myForm">
+		<div>
+		<label for="username">*用户名：</label>
+		<input type="text" name="username" id="username">
+		<span id="userTips"></span>
+		</div>
+
+		<div>
+		<label for="password">*请设置密码：</label>
+		<input type="password" name="password" id="password">
+		<span id="pwd1Tips"></span>
+		</div>
+		
+		<div>
+		<label for="password2">*请确认密码：</label>
+		<input type="password" name="password2" id="password2">
+		<span id="pwd2Tips"></span>
+		</div>
+
+		<div>
+		<label for="company">*公司名称：</label>
+		<input type="text" name="company" id="company">
+		<span id="companyTips"></span>
+		</div>
+
+		<div>
+		<label for="address">*公司所在地：</label>
+		<select name="address" id="address">
+			<option value="">请选择</option>
+			<option value="BJ">北京</option>
+		</select>
+		<select name="district" id="district">
+			<option value="">请选择</option>
+			<option value="CP">昌平</option>
+			<option value="HD">海淀</option>
+			<option value="CY">朝阳</option>
+		</select>
+		<span id="addressTips"></span>
+		</div>
+
+		<div>
+		<label for="usage">*购买类型/用途：</label>
+		<input type="checkbox" name="usage">IT设备
+		<input type="checkbox" name="usage">数码通讯
+		<input type="checkbox" name="usage">办公用品
+		<input type="checkbox" name="usage">大家电
+		<span id="usageTips"></span>
+		</div>
+
+		<div>
+		<label for="phone">推荐人手机：</label>
+		<input type="text" name="phone" id="phone">
+		<span id="phoneTips"></span>
+		</div>
+
+		<div>
+		<button type="button" class="submit" onclick="register()">立即注册</button>
+		</div>
+	</form>
+</div>
+<script type="text/javascript">
+// 注册表单
+    function register() {
+    	var username=document.getElementById('username').value;
+    	if (/^[A-Za-z0-9_\\-\\u4e00-\\u9fa5]{4,20}$/.test(username)) {
+    		document.getElementById("userTips").innerHTML="<em>√</em>";
+    	}
+    	else{
+    		document.getElementById("userTips").innerHTML="4-20位字符，汉字字母数字下划线！！";
+    		return;
+    	}
+    	//密码
+    	var password=document.getElementById('password').value;
+    	if (/^.*[A-Za-z0-9\\w_-]{4,20}.*$/.test(password)){
+    		document.getElementById("pwd1Tips").innerHTML="<em>√</em>";
+    		var password2=document.getElementById('password2').value;
+	    	if (password==password2) {
+	    		document.getElementById("pwd2Tips").innerHTML="<em>√</em>";
+	    		}
+	    	else{
+	    		document.getElementById("pwd2Tips").innerHTML="密码不一致";
+	    		return;
+	    		}
+	    	}
+    	else{
+    		document.getElementById("pwd1Tips").innerHTML="密码由4-20位字符，汉字字母数字！！";
+    		return;
+    	}
+    	// 公司名称
+    	var company=document.getElementById("company").value;
+    	if (!(company==="")) {
+    		document.getElementById("companyTips").innerHTML="<em>√</em>";
+
+    	}
+    	else{
+    		document.getElementById("companyTips").innerHTML="公司名称不可为空！！";
+    		return;
+    	}
+    	
+    	// 公司地址
+    	var address=document.getElementById('address').value;
+    	if (!(address==="")) {
+    		document.getElementById("addressTips").innerHTML="<em>√</em>";
+    	}
+    	else{
+    		document.getElementById("addressTips").innerHTML="公司地址不可为空！！";
+    		return;
+    	}
+    	// 费用
+    	if (checkCheckBox()) {
+    		document.getElementById("usageTips").innerHTML="<em>√</em>";
+    	}
+    	else{
+    		document.getElementById("usageTips").innerHTML="请选择购买类型！！";
+    		return;
+    	}
+    	// 手机
+    	var phone=document.getElementById('phone').value;
+    	if (/^0?(13|15|17|18|14)[0-9]{9}$/.test(phone)) {
+    		document.getElementById("phoneTips").innerHTML="<em>√</em>";
+    	}
+    	else{
+    		document.getElementById("phoneTips").innerHTML="手机号码不正确！！";
+    		return;
+    	}
+    	if (confirm("请确认信息无误，然后提交！")) {
+    		document.getElementById("myForm").submit();
+    	}
+    	
+    }
+	function checkCheckBox(){
+		var usage=document.getElementsByName('usage');
+		for (var i in usage) {
+			if (usage[i].checked==true) {
+				return true;
+			}
+		}
+		return false;
+	}
+
+
+
+</script>
+</body>
+</html>

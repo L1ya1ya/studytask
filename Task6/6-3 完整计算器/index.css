@@ -1,0 +1,84 @@
+body,ul{ 
+    margin:0px; padding:0px;
+}
+body{
+    background-color: #E6E6E6;
+}
+.fl{ 
+    float:left;
+}
+.fr{ 
+    float:right;
+}
+/*计算器外框*/
+.calu{
+ padding:0px 10px; width:470px;
+}
+
+.calBox{
+    width: 460px;
+    padding-bottom: 10px;
+    background: #FDFDFD;
+    border-radius: 5px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -230px;
+    margin-top: -225px;
+    box-shadow: 0px 0px 10px rgba(153,153,153,0.8),0px 0px 10px rgba(0,0,0,0.5) inset;
+    -webkit-box-shadow: 0px 0px 10px rgba(153,153,153,0.8),0px 0px 10px rgba(0,0,0,0.5) inset;
+    background: #F9F9F9;
+    overflow: hidden
+}
+/*显示屏*/
+input{ 
+    width:406px; 
+    height:82px; 
+    margin:10px 7px 0px; 
+    border-radius:5px; 
+    border:1px solid #64655F; 
+    outline:none; 
+    background:#FCFDEB; 
+    text-align:right; 
+    font-family:"微软雅黑";
+    font-size:40px; 
+    padding:0px 10px;
+}
+/*按键*/
+li{
+ list-style:none; 
+ width:74px; 
+ height:44px; 
+ line-height:44px; 
+ text-align:center; 
+ font-family:"微软雅黑"; 
+ border:1px solid #8B8B8B; 
+ border-radius:5px;  
+ float:left; 
+ margin:12px 6px 0px;
+ cursor:pointer;
+ background:url(image/calBg1.jpg) repeat-x; 
+}
+/*特殊按键*/
+.one .orange{ 
+    background:url(image/calBg2.jpg) repeat-x; 
+    border:1px solid #875733;
+}
+.one .black{
+ background:url(image/calBg3.jpg) repeat-x; 
+ border:1px solid #363636;
+ color:#fff;
+}
+.one .gray{ 
+    background:url(image/calBg4.jpg) repeat-x; 
+    border:1px solid #5F6366;
+}
+.zero{ 
+    width:160px;
+}
+.one .deng{ 
+    background:url(image/calBg5.jpg); 
+    height:100px;
+    margin-top: -44px;
+}
+
