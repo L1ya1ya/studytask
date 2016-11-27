@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>极客学院首页</title>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div id="wrapper">
+<!-- 顶部 -->
+	<div id="header">
+		<div class="center">
+			<a href="http://www.jikexueyuan.com/" class="logo">
+				<img src="image/logo.png" title="极客学院首页">
+			</a>
+			<!-- 导航栏 -->
+			<nav>
+				<ul>
+					<li>
+						<a href="http://www.jikexueyuan.com/" style="color: #35b558;">首页</a>
+					</li>
+					<li>
+						职业学院
+						<i class="nav-icon"></i>
+						<div class="nav-school-list">
+							<h3>前端学院</h3>
+								<a href="#">
+								<i class="school-web"></i>
+								Web前端工程师
+								</a>
+							<h3>后端学院</h3>
+								<a href="#">
+								<i class="school-python"></i>
+								Python Web工程师
+								</a>
+								<a href="#">
+								<i class="school-go"></i>
+								Go语言工程师
+								</a>
+							<h3>移动学院</h3>
+								<a href="#">
+								<i class="school-ios"></i>
+								iOS工程师
+								</a>
+						</div>
+					</li>
+					<li>
+						会员课程
+						<i class="nav-icon"></i>
+						<div class="nav-lesson-list">
+							<a href="#">
+								<i class="lesson-kck"></i>课程库
+								<span>2500+</span>
+							</a>
+							<a href="#">
+								<i class="lesson-zyljt"></i>职业路径图
+								<span>9</span>
+							</a>
+							<a href="#">
+								<i class="lesson-zstxt"></i>知识体系图
+								<span>24</span>
+							</a>
+							<a href="#">
+								<i class="lesson-xlkc"></i>系列课程
+								<span>101</span>
+							</a>
+							<a href="#">
+								<i class="lesson-kcbq"></i>课程标签
+								<span>4000+</span>
+							</a>
+							<a href="#">
+								<i class="lesson-vip"></i>VIP会员购买
+								<span>30/月  260/年</span>
+							</a>
+						</div>
+					</li>
+					<li>
+						极客社区
+						<i class="nav-icon"></i>
+						<div class="nav-community-list">
+							<a href="#">
+								<i class="community-jswd"></i>技术问答
+								<span>20000+</span>
+							</a>
+							<a href="#">
+								<i class="community-wiki"></i>Wiki
+								<span>351</span>
+							</a>
+							<a href="#">
+								<i class="community-sq"></i>社群
+								<span>7000+</span>
+							</a>
+							<a href="#">
+								<i class="community-zyxz"></i>资源下载
+								<span>3000+</span>
+							</a>
+						</div>
+					</li>
+				</ul>
+			</nav>
+			<!-- 导航栏结束 -->
+			<!-- 顶部右侧图标 -->
+			<div class="login-icon">
+				<span class="icon-search" id="search"></span>
+				<span class="icon-app">
+					<div class="submenu">
+						<i class="trangle"></i>
+						<img src="image/erweima.png">
+					</div>
+				</span>
+				<span class="icon-pic">
+					<a href="#">
+						<img src="image/pic.jpeg">
+					</a>
+					<i class="icon-vip"></i>
+					<dl class="submenu">
+						<i class="trangle"></i>
+						<dd id="getUserLevel">
+							<a href="#" class="no-vip"></a>
+							<a href="#" class="yes-vip"></a>
+						</dd>
+						<dd>
+							<a href="#">
+								<i class="xxzx-icon"></i>学习中心
+							</a>
+						</dd>
+						<dd>
+							<a href="#">
+								<i class="grzy-icon"></i>个人主页
+							</a>
+						</dd>
+						<dd>
+							<a href="#">
+								<i class="xxtz-icon"></i>消息通知
+							</a>
+						</dd>
+						<dd>
+							<a href="#">
+								<i class="zhsz-icon"></i>账号设置
+							</a>
+						</dd>
+						<dd>
+							<a href="#">
+								<i class="tc-icon"></i>退出登录
+							</a>
+						</dd>
+					</dl>
+				</span>
+			</div>
+			<!-- 右侧图标结束 -->
+			<div class="searchbox" id="moreSearch" style="display: none;">
+				<i class="close-icon"></i>
+				<i class="search-icon"></i>
+				<input class="search_header" placeholder="搜索课程、问答或Wiki" value="">
+				<div class="tagbox">
+					<a href="#">Android</a>
+					<a href="#">iOS</a>
+					<a href="#">HTML5</a>
+			</div>
+		</div>
+		</div>
+	</div>
+	<!-- 顶部结束 -->
+	<!-- 正文部分 -->
+	<div id="main">
+		<div class="main-container">
+			<div class="main-content">
+				<!-- 左侧菜单栏 -->
+				<div class="main-left">
+					<div class="lesson-detail">
+						<div class="title">
+							<h2>
+							<a href="#">
+							<i class="icon-course-curr"></i>课程库
+							</a>
+							</h2>
+						</div>
+						<div class="sub-lesson">
+							<ul>
+								<li>
+									<div class="nav" id="nav1">
+				                    	<div class="nnav">
+											<a cgid="1" href="#">移动开发</a> 
+										</div>
+		                					<div class="list-show" id="L1" style="display: none;">
+						                        <div>
+						                            <dl>
+						                                <dt><a href="#" cgid="58">应用开发</a></dt>
+						                                <dd class="cf">
+						                                	<a href="#" cgid="59">Android</a>
+						                                	<a href="#" cgid="60">iOS</a>
+						                                </dd>
+						                            </dl>
+						                            
+						                            <dl>
+						                                <dt><a href="#" cgid="13">游戏开发</a></dt>
+						                                <dd class="cf">
+							                                <a href="#" cgid="63">Cocos</a>
+							                                <a href="#" cgid="64">Unity3D</a>
+							                                <a href="#" cgid="65">SpriteKit 2D</a>
+							                                <a href="#" cgid="66">Unreal</a>
+						                                </dd>
+						                            </dl>
+						                            
+						                            <dl>
+						                                <dt><a href="#" cgid="14">常用框架</a></dt>
+						                                <dd class="cf">
+						                                	<a href="#" cgid="68">Cordova</a>
+						                                	<a href="#" cgid="382">React Native</a>
+						                                </dd>
+						                            </dl>   
+						                        </div>
+							            	</div><!-- list-show -->
+					            	</div>
+								</li>
+								
+								<li>
+									<div class="nav" id="nav2">
+										<div class="nnav">
+					                    <a cgid="1" href="#">前端开发</a>
+					                    </div>
+					                    <div class="list-show" id="L2" style="display: none;">
+		                                    <div>
+					                            <dl>
+					                                <dt><a href="#" cgid="16">前端基础</a></dt>
+					                                <dd class="cf"> 
+					                                    <a href="#" cgid="76">HTML</a>
+					                                    <a href="#" cgid="77">CSS</a>
+					                                    <a href="#" cgid="78">JavaScript</a>
+					                                    <a href="#" cgid="79">HTML5</a>
+					                                    <a href="#" cgid="80">CSS3</a>
+					                                    <a href="#" cgid="81">技术前瞻</a>
+					                                </dd>
+					                            </dl>
+					                            
+					                            <dl>
+					                                <dt><a href="#" cgid="18">前端进阶</a></dt>
+					                                <dd class="cf">
+					                                    <a href="#" cgid="97">Typescript</a>
+					                                    <a href="#" cgid="98">前端安全</a>
+					                                    <a href="#" cgid="99">项目实战</a>
+					                                </dd>
+					                            </dl>
+					                            
+					                            <dl>
+					                                <dt><a href="#" cgid="17">前端框架</a></dt>
+					                                <dd class="cf">
+					                                    <a href="#" cgid="82">jQuery</a>
+					                                    <a href="#" cgid="83">jQuery UI</a>
+					                                    <a href="#" cgid="84">jQuery Mobile</a>
+					                                    <a href="#" cgid="85">Ext JS</a>
+					                                    <a href="#" cgid="86">AngularJS</a>
+					                                    <a href="#" cgid="87">ReactJS</a>
+					                                    <a href="#" cgid="94">Bootstrap</a>
+					                                    <a href="#" cgid="371">React Native</a>
+					                                    <a href="#" cgid="372">Backbone</a>
+					                                    <a href="#" cgid="373">Three.js</a>
+					                                    <a href="#" cgid="374">MooTools</a>
+					                                    <a href="#" cgid="375">Compass</a>
+					                                </dd>
+					                            </dl>
+					                            
+					                            <dl>
+					                                <dt><a href="#" cgid="19">HTML5游戏</a></dt>
+					                                <dd class="cf">
+					                                    <a href="#" cgid="100">Canvas</a>
+					                                   <a href="#" cgid="102">SVG</a>
+					                                    <a href="#" cgid="103">WebGL</a>
+					                                    <a href="#" cgid="105">Cocos2d-js</a>
+					                                    <a href="#" cgid="106">CreateJS</a>
+					                                    <a href="#" cgid="107">Flash</a>
+					                                    <a href="#" cgid="108">Unreal</a>
+					                                    <a href="#" cgid="109">Egret</a>
+					                                    <a href="#" cgid="376">Phaser</a>
+					                                </dd>
+					                            </dl>
+		                    				</div>
+	            						</div>
+				                    </div>
+				                    
+								</li>
+								
+				                <li>
+									<div class="nav">
+				                    <a cgid="1" href="#">后端开发</a>
+				                    </div>
+								</li>
+								<li>
+									<div class="nav">
+				                    <a cgid="1" href="#">基础知识</a>
+				                    </div>
+								</li>
+								<li>
+									<div class="nav">
+				                    <a cgid="1" href="#">云计算&大数据</a>
+				                    </div>
+								</li>
+								<li>
+									<div class="nav">
+				                    <a cgid="1" href="#">智能硬件&物联网</a>
+				                    </div>
+								</li>
+								<li>
+									<div class="nav">
+				                    <a cgid="1" href="#">数据库</a>
+				                    </div>
+								</li>
+								<li>
+									<div class="nav">
+				                    <a cgid="1" href="#">认证考试</a>
+				                    </div>
+								</li>
+								<li>
+									<div class="nav">
+				                    <a cgid="1" href="#">企业IT</a>
+				                    </div>
+								</li>
+								<li>
+									<div class="nav" id="nav3">
+										<div class="nnav">
+					                    <a cgid="1" href="#">设计&产品&测试</a>
+					                    </div>
+					                  	<div class="list-show" id="L3" style="display: none;">
+					                        <div>
+					                            <dl>
+					                                <dt><a href="#" cgid="51">设计基础</a></dt>
+					                                <dd class="cf">
+					                                    <a href="#" cgid="327">Photoshop</a>
+					                                    <a href="#" cgid="329">Flash</a>
+					                                    <a href="#" cgid="330">Illustrator</a>
+					                                    <a href="#" cgid="331">Sketch</a>
+					                                </dd>
+					                            </dl>
+					                            
+					                            <dl>
+					                                <dt><a href="#" cgid="52">游戏设计</a></dt>
+					                                <dd class="cf">
+					                                    <a href="#" cgid="336">界面设计</a>
+					                                    <a href="#" cgid="338">角色设计</a>
+					                                </dd>
+					                            </dl>
+					                            
+					                            <dl>
+					                                <dt><a href="#" cgid="54">产品经理</a></dt>
+					                                <dd class="cf">
+					                                    <a href="#" cgid="341">需求分析</a>
+					                                    <a href="#" cgid="343">Axure</a>
+					                                    <a href="#" cgid="344">项目实战</a>
+					                                </dd>
+					                            </dl>
+					                            
+					                            <dl>
+					                                <dt><a href="#" cgid="362">视觉设计</a></dt>
+					                                <dd class="cf">
+					                                    <a href="#" cgid="340">应用UI设计</a>
+					                                    <a href="#" cgid="363">网页UI设计</a>
+					                                    <a href="#" cgid="364">设计理论</a>
+					                                    <a href="#" cgid="365">图形设计</a>
+					                                </dd>
+					                            </dl>
+					                            
+					                            <dl>
+					                                <dt><a href="#" cgid="50">测试工具</a></dt>
+					                                <dd class="cf">
+					                                    <a href="#" cgid="325">自动化测试</a>
+					                                </dd>
+					                            </dl>
+					                        </div>
+						            	</div>
+				                    </div>
+				                    
+								</li>
+								
+							</ul>
+						</div>
+					</div>
+					<ul class="lesson-list">
+					    <li>
+					        <a href="#">
+					            <i class="icon-zylj"></i>职业路径图
+					        </a>
+					    </li>
+					    <li>
+					        <a href="#">
+					            <i class="icon-zstx"></i>知识体系图
+					        </a>
+					    </li>
+					    <li>
+					        <a href="#">
+					            <i class="icon-xlkc"></i>系列课程
+					        </a>
+					    </li>
+					    <li>
+					        <a href="#">
+					            <i class="icon-kcbq"></i>课程标签
+					        </a>
+					    </li>
+					</ul>
+				</div>
+				<!-- 右侧模块 -->
+				<div class="main-right">
+					<!-- 右侧导航栏 -->
+					<div class="right-menu">
+						<div class="sort">
+						<ul class="sort-1">
+							<h4>全部课程</h4>
+							<li  class="choice1">
+								<span>最新</span>
+								<ul class="sort-2" id="st1">
+									<li><a href="#">最新</a></li>
+									<li><a href="#">最新</a></li>
+									<li><a href="#">最热</a></li>
+								</ul>
+							</li>
+							<li class="choice2">
+								<span>课程类型</span>
+								<ul class="sort-2" id="st2">
+									<li><a href="#">课程类型</a></li>
+									<li><a href="#">VIP</a></li>
+									<li><a href="#">免费</a></li>
+									<li><a href="#">认证专享</a></li>
+									<li><a href="#">全部</a></li>
+								</ul>
+							</li>
+							<li class="choice3">
+								<span>内容类型</span>
+								<ul class="sort-2" id="st3">
+									<li><a href="#">内容类型</a></li>
+									<li><a href="#">知识精讲</a></li>
+									<li><a href="#">项目实战</a></li>
+									<li><a href="#">全部</a></li>
+								</ul>
+							</li>
+							<li class="choice4">
+								<span>难度等级</span>
+								<ul class="sort-2" id="st4">
+									<li><a href="#">难度等级</a></li>
+									<li><a href="#">初级</a></li>
+									<li><a href="#">中级</a></li>
+									<li><a href="#">高级</a></li>
+									<li><a href="#">全部</a></li>
+								</ul>
+							</li>
+						</ul>
+						</div>
+						<div class="previewMode">
+							<ul>
+								<li class="kuai-icon curr"><i class="icon"></i>
+								</li>
+								<li class="list-icon"><i class="icon"></i>
+								</li>
+								
+							</ul>
+						</div>
+					</div>
+					<!-- 右侧课程区 -->
+					<div class="study" id="changid">
+						<ul class="lesson-r">
+							<li id="Box1" class="box1">
+								<div class="lessonimg-box">
+									<i class="user-action lesson-shoucang "></i>
+									<a href="#" target="_blank">
+										<img src="image/1.jpg" class="lessonimg">
+									<div class="lessonplay">
+										<i class="playericon"></i>
+									</div>
+									</a>
+								</div>
+
+								<div class="lesson-infor">
+									<h2>
+									<a href="#">如何一小时快速搭建一个应用号</a></h2>
+									<p class="detail">
+										该课程详细讲解了如何1小时快速搭建一个应用号，包括搭建过程的演示与框架，搭建流程以及组件与API，手把手教你搭建你自己的第一个微信小程序
+									</p>
+								<div class="timeandicon">
+									<div class="cf">
+										<dl>
+											<dd class="mar-b8"><i class="time-icon"></i>
+												<em>3课时30分钟</em>
+											</dd>
+											<dd class="zhongji">
+												<i class="xinhao-icon"></i>
+												<em>初级</em>
+											</dd>
+										</dl>
+										<em class="learn-number">4653人学习</em>
+									</div>
+									<div class="cf">
+										<div class="lessonicon-box">
+											<a href="#">
+												<img width="16" src="image/js.png">
+											</a>
+										</div>
+									</div>
+								</div>
+								</div>
+							</li>
+							<li id="Box2">
+								<div class="lessonimg-box">
+									<i class="user-action lesson-shoucang "></i>
+									<a href="#" target="_blank">
+										<img src="image/1.jpg" class="lessonimg">
+									<div class="lessonplay">
+										<i class="playericon"></i>
+									</div>
+									</a>
+								</div>
+
+								<div class="lesson-infor">
+									<h2>
+									<a href="#">如何一小时快速搭建一个应用号</a></h2>
+									<p class="detail">
+										该课程详细讲解了如何1小时快速搭建一个应用号，包括搭建过程的演示与框架，搭建流程以及组件与API，手把手教你搭建你自己的第一个微信小程序
+									</p>
+								<div class="timeandicon">
+									<div class="cf">
+										<dl>
+											<dd class="mar-b8"><i class="time-icon"></i>
+												<em>3课时30分钟</em>
+											</dd>
+											<dd class="zhongji">
+												<i class="xinhao-icon"></i>
+												<em>初级</em>
+											</dd>
+										</dl>
+										<em class="learn-number">4653人学习</em>
+									</div>
+									<div class="cf">
+										<div class="lessonicon-box">
+											<a href="#">
+												<img width="16" src="image/js.png">
+											</a>
+										</div>
+									</div>
+								</div>
+								</div>
+							</li>
+							<li class="three" id="Box3">
+								<div class="lessonimg-box">
+									<i class="user-action lesson-shoucang "></i>
+									<a href="#" target="_blank">
+										<img src="image/1.jpg" class="lessonimg">
+									<div class="lessonplay">
+										<i class="playericon"></i>
+									</div>
+									</a>
+								</div>
+
+								<div class="lesson-infor">
+									<h2>
+									<a href="#">如何一小时快速搭建一个应用号</a></h2>
+									<p class="detail">
+										该课程详细讲解了如何1小时快速搭建一个应用号，包括搭建过程的演示与框架，搭建流程以及组件与API，手把手教你搭建你自己的第一个微信小程序
+									</p>
+								<div class="timeandicon">
+									<div class="cf">
+										<dl>
+											<dd class="mar-b8"><i class="time-icon"></i>
+												<em>3课时30分钟</em>
+											</dd>
+											<dd class="zhongji">
+												<i class="xinhao-icon"></i>
+												<em>初级</em>
+											</dd>
+										</dl>
+										<em class="learn-number">4653人学习</em>
+									</div>
+									<div class="cf">
+										<div class="lessonicon-box">
+											<a href="#">
+												<img width="16" src="image/js.png">
+											</a>
+										</div>
+									</div>
+								</div>
+								</div>
+							</li>
+							<li id="Box4">
+								<div class="lessonimg-box">
+									<i class="user-action lesson-shoucang "></i>
+									<a href="#" target="_blank">
+										<img src="image/1.jpg" class="lessonimg">
+									<div class="lessonplay">
+										<i class="playericon"></i>
+									</div>
+									</a>
+								</div>
+
+								<div class="lesson-infor">
+									<h2>
+									<a href="#">如何一小时快速搭建一个应用号</a></h2>
+									<p class="detail">
+										该课程详细讲解了如何1小时快速搭建一个应用号，包括搭建过程的演示与框架，搭建流程以及组件与API，手把手教你搭建你自己的第一个微信小程序
+									</p>
+								<div class="timeandicon">
+									<div class="cf">
+										<dl>
+											<dd class="mar-b8"><i class="time-icon"></i>
+												<em>3课时30分钟</em>
+											</dd>
+											<dd class="zhongji">
+												<i class="xinhao-icon"></i>
+												<em>初级</em>
+											</dd>
+										</dl>
+										<em class="learn-number">4653人学习</em>
+									</div>
+									<div class="cf">
+										<div class="lessonicon-box">
+											<a href="#">
+												<img width="16" src="image/js.png">
+											</a>
+										</div>
+									</div>
+								</div>
+								</div>
+							</li>
+							<li id="Box5">
+								<div class="lessonimg-box">
+									<i class="user-action lesson-shoucang "></i>
+									<a href="#" target="_blank">
+										<img src="image/1.jpg" class="lessonimg">
+									<div class="lessonplay">
+										<i class="playericon"></i>
+									</div>
+									</a>
+								</div>
+
+								<div class="lesson-infor">
+									<h2>
+									<a href="#">如何一小时快速搭建一个应用号</a></h2>
+									<p class="detail">
+										该课程详细讲解了如何1小时快速搭建一个应用号，包括搭建过程的演示与框架，搭建流程以及组件与API，手把手教你搭建你自己的第一个微信小程序
+									</p>
+								<div class="timeandicon">
+									<div class="cf">
+										<dl>
+											<dd class="mar-b8"><i class="time-icon"></i>
+												<em>3课时30分钟</em>
+											</dd>
+											<dd class="zhongji">
+												<i class="xinhao-icon"></i>
+												<em>初级</em>
+											</dd>
+										</dl>
+										<em class="learn-number">4653人学习</em>
+									</div>
+									<div class="cf">
+										<div class="lessonicon-box">
+											<a href="#">
+												<img width="16" src="image/js.png">
+											</a>
+										</div>
+									</div>
+								</div>
+								</div>
+							</li>
+							<li class="three" id="Box6">
+								<div class="lessonimg-box">
+									<i class="user-action lesson-shoucang "></i>
+									<a href="#" target="_blank">
+										<img src="image/1.jpg" class="lessonimg">
+									<div class="lessonplay">
+										<i class="playericon"></i>
+									</div>
+									</a>
+								</div>
+
+								<div class="lesson-infor">
+									<h2>
+									<a href="#">如何一小时快速搭建一个应用号</a></h2>
+									<p class="detail">
+										该课程详细讲解了如何1小时快速搭建一个应用号，包括搭建过程的演示与框架，搭建流程以及组件与API，手把手教你搭建你自己的第一个微信小程序
+									</p>
+								<div class="timeandicon">
+									<div class="cf">
+										<dl>
+											<dd class="mar-b8"><i class="time-icon"></i>
+												<em>3课时30分钟</em>
+											</dd>
+											<dd class="zhongji">
+												<i class="xinhao-icon"></i>
+												<em>初级</em>
+											</dd>
+										</dl>
+										<em class="learn-number">4653人学习</em>
+									</div>
+									<div class="cf">
+										<div class="lessonicon-box">
+											<a href="#">
+												<img width="16" src="image/js.png">
+											</a>
+										</div>
+									</div>
+								</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<!--页码  -->
+					<div class="page-nav">
+						<ul class="pages">
+						<li class="pgNext pgEmpty">首页</li>
+						<li class="pgNext pgEmpty">上一页</li>
+						<li class="page-number pgCurrent">1</li>
+						<li class="page-number">2</li>
+						<li class="page-number">3</li>
+						<li class="page-number">4</li>
+						<li class="page-number">5</li>
+						<li class="page-number">6</li>
+						<li class="page-number">7</li>
+						<li class="thpoint">...</li>
+						<li class="pgNext">下一页</li>
+						<li class="pgNext">末页</li>
+						<li class="thpoint pagetotal" style="margin-top:3px;">共 13 页</li>
+						<li class="thpoint pagenow">当前
+							<input type="text">页脚
+						</li>
+						<li class="pgNext go">确定</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 正文部分结束 -->
+	<!-- 页脚 -->
+	<div id="footer">
+		<div class="center">
+			<div class="footer-1">
+				<div class="footer-logo">
+					<img src="image/logo-footer.png">
+					<p>极客学院，编程是一种信仰！</p>
+				</div>
+				<dl>
+					<dt>职业学院</dt>
+					<dd><a href="#">Web前端工程师</a></dd>
+					<dd><a href="#">Python Web工程师</a></dd>
+					<dd><a href="#">Go语言工程师</a></dd>
+					<dd><a href="#">iOS工程师</a></dd>
+				</dl>
+				<dl>
+					<dt>会员课程</dt>
+					<dd><a href="#">课程库</a></dd>
+					<dd><a href="#">知识体系图</a></dd>
+					<dd><a href="#">职业路径图</a></dd>
+					<dd><a href="#">系列课程</a></dd>
+					<dd><a href="#">课程标签</a></dd>
+				</dl>
+				<dl>
+					<dt>极客社区</dt>
+					<dd><a href="#">技术问答</a></dd>
+					<dd><a href="#">Wiki</a></dd>
+					<dd><a href="#">资源下载</a></dd>
+					<dd><a href="#">社群</a></dd>
+				</dl>
+				<dl>
+					<dt>其他</dt>
+					<dd><a href="#">关于我们</a></dd>
+					<dd><a href="#">使用指南</a></dd>
+					<dd><a href="#">加入我们</a></dd>
+					<dd><a href="#">联系我们</a></dd>
+					<dd><a href="#">友情链接</a></dd>
+				</dl>
+				<div class="tel">
+					<p class="tel-service">服务热线：400-678-8266</p>
+					<div class="down-ios">iPhone
+						<div class="submenu">
+							<i class="trangle"></i>
+							<img src="image/erweima.png">
+						</div>
+					</div>
+					<div class="down-android">Android
+						<div class="submenu">
+							<i class="trangle"></i>
+							<img src="image/erweima.png">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-2">
+				Copyright &copy; 2013-2016
+				<strong>
+				<a href="http://www.jikexueyuan.com/" target="_blank">jikexueyuan.com
+				</a>
+				</strong>
+				 All Rights Reserved. 京ICP备11018032号-8 京公网安备11010802020210
+				<a href="#" class="weibo"></a>
+				<a href="#" class="wechat"></a>
+				<a href="#" class="faith">
+					<img src="image/cert.png">
+				</a>
+			</div>
+		</div>
+	</div>
+	<!-- 回到顶部 -->
+	<div id="s_top_feed" class="top-feed"> 
+		<div class="to-top"> 
+			<div class="icon-mask"> 
+				<div class="text"> 回到顶部 </div> 
+			</div> 
+			<span class="icon"></span> 
+		</div> 
+	</div>
+</div>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/changeList.js"></script>
+</body>
+</html>
