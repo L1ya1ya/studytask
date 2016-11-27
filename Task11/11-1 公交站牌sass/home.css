@@ -1,0 +1,116 @@
+.bus {
+  margin: 50px auto;
+  width: 380px;
+  height: 220px;
+  border: 1px solid #e6e3e3; }
+/*本站*/
+.bus-here {
+  color: #ff0000;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold; }
+/*线路介绍*/
+.bus-route {
+  width: 380px;
+  position: relative; }
+
+.b-route-num {
+  background: #ff0000;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 60px;
+  height: 40px;
+  color: #fff;
+  float: left; }
+
+.b-route-num .num1 {
+  font-size: 30px;
+  font-weight: bold;
+  position: absolute;
+  left: 5%;
+  top: 12px; }
+
+.b-route-num .num2 {
+  font-size: 15px;
+  position: absolute;
+  left: 10%;
+  top: 26px; }
+
+.b-route-direction {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 240px;
+  float: left; }
+
+.b-route-direction-top, .b-route-direction-next {
+  width: 200px;
+  position: absolute;
+  left: 28%;
+  font-size: 20px;
+  color: #177b52; }
+
+.start, .end, .line {
+  float: left; }
+
+.b-route-direction-next {
+  left: 34%;
+  top: 35px;
+  font-weight: bold;
+  font-size: 17px;
+  color: #000; }
+  
+/*具体站点*/
+.bus-station {
+  background: #177b52;
+  width: 380px;
+  font-size: 12px;
+  color: #fff;
+  height: 100px;
+  position: relative;
+  top: 27%; }
+
+.bus-station nav ul {
+  position: absolute;
+  padding: 0;
+  margin: 5px 8px;
+  list-style: none; }
+.bus-station nav li {
+  float: left;
+  width: 11px;
+  margin: 0 2px; }
+.bus-station nav li:nth-child(9) {
+  color: #ffff00; }
+/*运行方向和运行时间*/
+.bus-direction {
+  width: 380px;
+  font-size: 12px;
+  color: #000;
+  position: relative;
+  top: 27%; }
+  .bus-direction .info {
+    margin: 8px 8px 3px 10px;
+    font-size: 13px;
+    font-weight: 500; }
+  .bus-direction .info .time {
+    padding-left: 16px; }
+  .bus-direction .info .price {
+    padding-left: 77px; }
+/*方向*/
+.dir-next {
+  width: 320px;
+  height: 5px;
+  background: #ff0000;
+  position: absolute;
+  left: 3%; }
+
+.dir-next:after {
+  display: block;
+  content: "";
+  border: 12px solid transparent;
+  border-left: 38px solid #f00;
+  border-bottom: none;
+  position: absolute;
+  left: 100%;
+  top: -7px; }
+
+/*# sourceMappingURL=home.css.map */

@@ -1,0 +1,142 @@
+$fontColor1: #fff;
+$fontColor2: #ff0000;
+$fontColor3: #ffff00;
+$fontColor4: #000;
+$fontColor5: #177b52;
+$fontweight:  bold;
+$width: 380px;
+$floatl: left;
+$positionA: absolute;
+$positionR: relative;
+
+.bus {
+  margin: 50px auto;
+  width: $width;
+  height: 220px;
+  border: 1px solid #e6e3e3;
+}
+.bus-here {
+  color: $fontColor2;
+  font-size: 20px;
+  text-align: center;
+  font-weight: $fontweight; }
+
+.bus-route {
+  width: $width; 
+  position: $positionR;
+}
+.b-route-num{
+	background:$fontColor2;
+	margin-top:10px;
+	margin-bottom:10px;
+	width: 60px;
+    height: 40px;
+    color: $fontColor1;
+    float: $floatl;
+}
+.b-route-num .num1{
+    font-size: 30px;
+    font-weight: $fontweight;
+    position: $positionA;
+    left: 5%;
+    top: 12px;
+}
+.b-route-num .num2{
+    font-size: 15px;
+    position: $positionA;
+    left: 10%;
+    top: 26px;
+}
+.b-route-direction{
+	margin-top:10px;
+	margin-bottom:10px;
+    width: 240px;
+    float: $floatl;
+}
+.b-route-direction-top{
+	width: 200px;
+	position: $positionA;
+	left: 28%;
+	font-size: 20px;
+	color: $fontColor5;
+}
+.start{
+	float: $floatl;
+}
+.end{
+	@extend .start;
+}
+.line{
+	@extend .start;
+}
+.b-route-direction-next{
+	@extend .b-route-direction-top;
+	left: 34%;
+	top: 35px;
+	font-weight: $fontweight;
+	font-size: 17px;
+	color: $fontColor4;
+}
+.bus-station{
+	background: $fontColor5;
+	width: $width;
+	font-size: 12px;
+	color: $fontColor1;
+	height: 100px;
+    position: $positionR;
+    top: 27%;
+}
+.bus-station nav{
+	ul{
+		position: $positionA;
+	    padding: 0;
+	    margin: 5px 8px;
+	    list-style: none;
+	}
+	li{
+	    float: $floatl;
+	    width: 11px;
+	    margin: 0 2px;
+	}
+	li:nth-child(9){
+		color: $fontColor3;
+	}
+}
+.bus-direction{
+	width: $width;
+	font-size: 12px;
+	color: $fontColor4;
+    position: $positionR;
+    top: 27%;
+
+    .info{
+		margin:8px 8px 3px 10px;
+		font-size: 13px;
+		font-weight: 500;
+	}
+
+	.info .time{
+		padding-left: 16px;
+	}
+	.info .price{
+		padding-left: 77px;
+	}
+}
+
+.dir-next{
+    width: 320px;
+    height: 5px;
+    background: $fontColor2;
+    position: $positionA;
+    left: 3%;
+}
+.dir-next:after{
+	display: block;
+    content: "";
+    border: 12px solid transparent;
+    border-left: 38px solid #f00;
+    border-bottom: none;
+    position: $positionA;
+    left: 100%;
+    top: -7px;
+}

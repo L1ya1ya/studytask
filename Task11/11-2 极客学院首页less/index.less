@@ -1,0 +1,1165 @@
+*{
+	margin:0;
+	padding: 0;
+}
+body{
+	background: #f5f5f5;
+	min-width: 1300px;
+}
+a{
+	text-decoration: none;
+    color: #555;
+}
+ul{
+    list-style: none;
+}
+a, dd, div, dl, dt,i, img, input, li, p, span, ul {
+    box-sizing: border-box;
+}
+@colorBorder: #ececec;
+@color: #35b558;
+/*顶部*/
+#header {
+	height: 60px;
+    border-bottom: 1px solid @colorBorder;
+    background: #fff;
+  img {
+    width: 109px;
+	height: 40px;
+	margin-top:10px;
+	float: left; 
+  }
+  nav { 
+  	float: left;
+  }
+}
+.center{
+	width: 1000px;
+    margin: 0 auto;
+}
+
+/*顶部——导航栏*/
+.transform (@transform: rotate(45deg)) {
+  transform: @transform;
+  -webkit-transform: @transform;
+  -moz-transform: @transform;
+}
+.animationRotate(@animation: rotate .8s ease normal){
+	animation: @animation;
+	-webkit-animation: @animation;
+    -moz-animation: @animation;
+}
+.animationListshow(@animation: listshow 0.8s ease normal){
+	animation: @animation;
+	-webkit-animation: @animation;
+    -moz-animation: @animation;
+}
+#header {
+  li {
+    float: left;
+	margin-right: 50px;
+    cursor: pointer;
+    font-size: 14px;
+    position: relative;
+    top: 22px;
+    left: 30px;
+    height: 60px;
+    &:hover { color: @color; }
+    .nav-icon{
+	    width: 8px;
+	    height: 8px;
+	    border-top: 1px solid #c1c1c1;
+	    border-left: 1px solid #c1c1c1;
+	    display: inline-block;
+	    .transform(rotate(-135deg));
+	    margin-bottom: 2px;
+	}
+    &:hover .nav-icon{ 
+	    margin-bottom: -2px;
+	    border-top: 1px solid @color;
+	    border-left: 1px solid @color;
+	    .transform;
+	    .animationRotate }
+  } 
+}
+@keyframes rotate{
+    0%{.transform(roate(-135deg))}
+    100%{.transform;}
+}
+
+.icon{
+	width: 14px;
+    height: 14px;
+    display: inline-block;
+    margin-right: 10px;
+    }
+.a{
+	display: block;
+    line-height: 30px;
+    padding: 0 15px;
+    font-size: 12px;
+}
+.span{
+	float: right;
+	margin-right: 10px;
+}
+#header nav li .nav-school-list{
+    float: left;
+    width: 280px;
+    background: #fff;
+    position: absolute;
+    left: -5px;
+    top: 36px;
+    .animationListshow;
+    display: none;
+    a{
+	    .a;
+	    &:hover{
+		    color: @color;
+		}
+	}
+	h3{
+	    margin: 10px 0;
+	    padding-left: 15px;
+	    background: #fafafa;
+	    line-height: 28px;
+	    font-weight: 400;
+	    font-size: 14px;
+	    color: #656565;
+	}
+	i{
+	    background: url(image/allicon3.png) 0 0 no-repeat;
+	    background-size: 16px 148px;
+	    .icon;
+	}
+	.school-web{  
+	    background: url(image/allicon.png) -15px -27px no-repeat;
+	    background-size: 64px 64px;
+	    .icon;
+	}
+	.school-python{
+	    background-position: -2px -2px;
+	}
+	.school-go{
+	    background-position: -2px -37px;
+	}
+	.school-ios{
+	    background-position: -2px -82px;
+	}
+}
+#header nav li{
+	&:hover .nav-school-list{
+	    display: block;
+	}
+	&:hover .nav-lesson-list{
+    	display: block;
+	}
+	&:hover .nav-community-list{
+	    display: block;
+	}
+
+}
+#header nav li .nav-lesson-list{
+    float: left;
+    width: 280px;
+    background: #fff;
+    position: absolute;
+    top: 37px;
+    .animationListshow;
+    display: none;
+	a{
+	    .a;
+	    line-height: 40px;
+	    color: #666;
+	    padding-left: 15px;
+	    margin: 10px 0;    
+	    &:hover{
+		    background: #f5f5f5;
+	    	color: @color;
+	    }
+	}
+	span{
+	    .span;
+	}
+	i{
+	    background: url(image/allicon.png) no-repeat;
+	    background-size: 64px 64px;
+	    .icon;
+	}
+	.lesson-kck{
+	    background-position: 0 -13px;
+	}
+	.lesson-zyljt{
+	    background-position: -45px 0px;
+	}
+	.lesson-zstxt{
+	    background-position: -30px -12px;
+	}
+	.lesson-zstxt{
+	    background-position: -30px -12px;
+	}
+	.lesson-xlkc{
+	    background-position: -30px -26px;
+	}
+	.lesson-kcbq{
+	    background-position: -13px -12px;
+	}
+	.lesson-vip{
+	    background-position: -15px 0px;
+	}	
+}
+#header nav li .nav-community-list{
+    float: left;
+    width: 280px;
+    background: #fff;
+    position: absolute;
+    top: 37px;
+    .animationListshow;
+    display: none;
+	a{
+	    .a;
+	    line-height: 40px;
+	    color: #666;
+	    padding-left: 15px;
+	    margin: 10px 0;
+	    &:hover{
+			    background: #f5f5f5;
+		    	color: @color;
+		    	}
+	}
+	span{
+	    .span;
+	}
+	i{
+	    background: url(image/allicon.png) no-repeat;
+	    background-size: 64px 64px;
+	    .icon;
+	}
+	.community-jswd{
+	    background-position: 0 -27px;
+	}
+	.community-wiki{
+	    background-position: -45px 0px;
+	}
+	.community-sq{
+	    background-position: -30px -12px;
+	}
+	.community-zyxz{
+	    background-position: -30px -12px;
+	}
+}
+
+/* 顶部——登录部分*/
+.box-sizing (@box-sizing: border-box) {
+  box-sizing: @box-sizing;
+  -webkit-box-sizing: @box-sizing;
+  -moz-box-sizing: @box-sizing;
+}
+.b{
+	display: inline-block;
+    background-size: 17px 17px;
+    background-position: 0, 0;
+}
+#header .login-icon{
+	float: right;
+    text-align: right;
+    width: 200px;
+    margin-right: 10px;
+    height: 60px;
+    .box-sizing;
+    span{
+	    height: 60px;
+	    width: 30px;
+	    margin-left: 25px;
+	    cursor: pointer;
+	    float: left;
+	    position: relative;
+	    img{
+			width: 25px;
+		    height: 25px;
+		    margin-top: 13px;
+		    display: block;
+		    .rounded-corners(50%);
+		    border: 1px solid #ddd;
+		    overflow: hidden;
+		    padding-top:0;
+		    float: right;
+		}
+	}
+
+	.icon-search{
+		background: url(image/search-icon.png) no-repeat;
+		.b;
+	    &:hover{
+		    background: url(image/search-icon2.png) no-repeat;
+		    .b;
+		}
+	}
+	.icon-app{
+		background: url(image/app-icon.png) no-repeat;
+		.b;
+	}
+	.icon-vip{
+		background: url(image/small-icon.png) 0 -32px no-repeat;
+		background-size: 64px 64px;
+	    width: 13px;
+	    height: 13px;
+	    display: inline-block;
+	    position: absolute;
+	    top: 28px;
+	    right: -3px;
+	}
+}
+@-webkit-keyframes listshow{
+    0%{opacity:0;}
+    100%{opacity:1;}
+}
+@keyframes listshow{
+    0%{opacity:0;}
+    100%{opacity:1;}
+}
+.sub{
+	position: absolute;
+    top: 58px; 
+    right: -36px;
+    width: 120px;
+    display: none;
+    .animationListshow;
+}
+#header .login-icon .icon-app {
+	.submenu{
+	    .sub;
+	    i{
+		    position: absolute;
+		    top: -8px;
+		    right: 50px;
+		    width: 15px;
+		    height: 15px;
+		    border-top: 1px solid @colorBorder;
+		    border-left: 1px solid @colorBorder;
+		    display: inline-block;
+		    background: #fff;
+		    .transform;
+		}
+		img{
+		    width: 120px;
+		    height: 157px;
+		    margin-top: 0;
+		    border: none;
+		    .rounded-corners(0);
+		}
+	}
+	&:hover{
+	    background: url(image/app-icon2.png) no-repeat;
+	    .b;
+	}
+	&:hover .submenu{
+	    display: block;
+	}
+}
+.vip{
+	background-size: 306px 16px;
+    display: inline-block;
+    width: 45px;
+    height: 14px;
+}
+#header .login-icon .icon-pic{
+	.submenu{
+	    .sub;
+	    right: -38px;
+	    background: #fff;
+	    dd{
+		    text-align: left;
+		    font-size: 12px;
+		    line-height: 26px;
+		    margin-top: 10px;
+		    padding-left: 10px;
+		    &:hover{
+			    background: #f5f5f5;
+			}
+			&:hover a{
+			        color: @color;
+			}
+			i{    
+			    background: url(image/small-icon.png) 0 0 no-repeat;
+			    background-size: 64px 64px;
+			    width: 12px;
+			    height: 12px;
+			    margin-right: 10px;
+			    display: inline-block;
+			}
+		}
+		.trangle{
+		    position: absolute;
+		    top: -8px;
+		    right: 25px;
+		    width: 15px;
+		    height: 15px;
+		    border-top: 1px solid @colorBorder;
+		    border-left: 1px solid @colorBorder;
+		    display: inline-block;
+		    background: #fff;
+		    .transform;
+		}
+		.no-vip{
+		    background: url(image/allvipicon.png) no-repeat;
+		    .vip;
+		    background-position: -238px -1px;
+		    margin-right: 10px;
+		}
+		.yes-vip{
+		    background: url(image/allvipicon.png) no-repeat;
+		    .vip;
+		    background-position: -143px -1px;
+		}
+		.xxzx-icon{
+		    background-position: -16px -15px;
+		}
+		.grzy-icon {
+		    background-position: -45px -1px;
+		}
+		.xxtz-icon {
+		    background-position: -16px -30px;
+		}
+		.zhsz-icon {
+		    background-position: -30px -1px;
+		}
+		.tc-icon {
+		    background-position: -16px -1px;
+		}
+	}
+	&:hover .submenu{
+	    display: block;
+	}
+
+}
+
+/*正文——Banner*/
+
+#bannerArea .banner{
+	height: 330px;
+    width: 750px;
+    float: left;
+    margin-right: 10px;
+    margin-top:20px;
+    .box-sizing;
+
+    .arrow-left{
+		background: url(image/arrow-left.png) no-repeat;
+		background-size: 50px 80px;
+		width: 50px;
+		height: 80px;
+		position: absolute;
+		top: 50%;
+		z-index: 2;
+		display: block;
+	}
+}
+/*正文——个人信息区域*/
+.userr{
+	float: left;
+	display: inline-block;
+	line-height: 18px;
+	width: 108px;
+	margin-top: 8px;
+}
+.userBottom{
+	display: inline-block;
+	font-size: 13px;
+	color: #fff;
+	width: 50px;
+	text-align: center;
+	.rounded-corners(8px);
+}
+.rounded-corners (@radius: 2px) {
+  border-radius: @radius;
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+}
+.transition(@transition : background 1.5s){
+	-webkit-transition: @transition;
+    -moz-transition: @transition;
+    -o-transition: @transition;
+    transition: @transition;
+}
+#bannerArea .banner-login{
+	float: left;
+    width: 240px;
+    height: 160px;
+    border: @border;
+    background: #fff;
+    .box-sizing;
+    padding: 26px 29px 24px;
+    margin-top: 20px;
+
+    .user{
+		height: 57px;
+		img{
+			float: left;
+		    width: 57px;
+		    height: 57px;
+		    .rounded-corners(50%);
+		    margin-right: 15px;
+		}
+		.username{
+			.userr;
+			font-size: 14px;
+			color: #555;
+		    
+		}
+		.user-bottom{
+			.userr;
+			.not-certified{
+				background:#ccc;
+				.userBottom;
+				margin-right: 8px;
+			    
+			}
+			.vip{
+				background:#912dca;
+				.userBottom;
+			    width: 40px;
+			}
+			
+		}
+	}
+	.myzoom{
+		font-size: 14px;
+	    float: left;
+	    display: inline-block;
+	    width: 180px;
+	    height: 32px;
+	    line-height: 32px;
+	    border: 1px solid @color;
+	    .rounded-corners;
+	    color: @color;
+	    text-align: center;
+	    margin-top: 20px;
+	    .transition;
+	    &:hover{
+			background: @color;
+			color: #fff;
+		}
+	}
+}
+#bannerArea .banner-container .activity{
+	float: left;
+    width: 240px;
+    height: 160px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+/*正文——就业班*/
+.transitionJiuye(@transition: color .5s){
+	-webkit-transition: @transition;
+    -moz-transition: @transition;
+    -o-transition: @transition;
+    transition: @transition;
+}
+@backgroundSize: 130px 65px;
+.jiuye{
+	float: left;
+    height: 130px;
+    width: 100%;
+    margin-top: 20px;
+    background: #fff;
+    position: relative;
+
+    .jiuyeban{
+		float: left;
+	    border: 1px solid #f0f0f0;
+	    border-left: 0;
+	    color: #555;
+	    text-align: center;
+	    padding-top: 90px;
+	    font-size: 12px;
+	    width: 250px;
+		height: 130px;
+		.box-sizing;
+	    .transitionJiuye;
+	    &:hover{
+			color: @color;
+		}
+		&:first-child{
+			background: url(image/php.png) no-repeat center 20px;
+			background-size: @backgroundSize;
+		}
+		&:nth-child(3){
+			background: url(image/html5.png) no-repeat center 20px;
+			background-size: @backgroundSize;
+		}
+		&:nth-child(4){
+			background: url(image/android.png) no-repeat center 20px;
+			background-size: @backgroundSize;
+		}
+		&:nth-child(5){
+			background: url(image/ios.png) no-repeat center 20px;
+			background-size: @backgroundSize;
+		}
+	}
+	i{
+		background: url(image/jiuye.png) no-repeat;
+		background-size: 52px 52px;
+		width: 52px;
+		height: 52px;
+		display: inline-block;
+		position: absolute;
+	    top: 0;
+	    left: 0;
+	}   
+}
+
+/*正文——课程推荐*/
+.BoxShadow(@boxShadow: box-shadow .5s){
+	-webkit-transition: @boxShadow;
+    -moz-transition: @boxShadow;
+    -o-transition: @boxShadow;
+    transition: @boxShadow;
+}
+.boxshadow{
+	box-shadow:1px 1px 5px 2px #dcdbdb;
+}
+.course{
+    float: left;
+    width: 1000px;
+    margin-top: 20px;
+
+    li{
+	    float: left;
+	    width: 235px;
+	    height: 100%;
+	    margin-right: 20px;
+	    border: @border;
+	    .box-sizing;
+	    &:hover{
+		    .boxshadow;
+		}
+		&:last-child{
+		    .liChild;
+		}
+	}
+	img{
+	    width: 233px;
+	    height: 155px;
+	}
+}
+@colorCourse: #999;
+@fsize: 12px;
+.course .course-container{
+    height: 113px;
+    padding: 14px;
+    background: #fff;
+    position: relative;
+    .box-sizing;
+
+    .title{
+	    font-size:@fsize;
+	    line-height: 28px;
+	    height: 36px;
+	}
+	.info{
+	    margin-top: 6px;
+	    color: @colorCourse;
+	    font-size: @fsize;
+	    line-height: 16px;
+	}
+	.price{
+	    float: left;
+	    font-size: 18px;
+	    color: #ff5c00;
+	    margin-right: 5px;
+	    margin-top: 8px;
+	    &:before{
+		    content: "¥";
+		    font-size: 14px;
+		    color: #ff5c00;
+		    margin-right: 3px;
+		}
+	}
+	.price-0{
+	    float: left;
+	    font-size: @fsize;
+	    color: @colorCourse;
+	    margin-top: 14px;
+	    text-decoration: line-through;
+	}
+	.num{
+	    position: absolute;
+	    bottom: 14px;
+	    right: 12px;
+	    color: @colorCourse;
+	    font-size: @fsize;
+	}
+
+}
+
+/*正文——学院展示*/
+.transitionO(@transition: opacity 1.5s){
+	-webkit-transition: @transition;
+    -moz-transition: @transition;
+    -o-transition: @transition;
+    transition: @transition;
+}
+.bg{
+	background-size: 36px 36px;
+}
+.college{
+    float: left;
+    margin-top: 40px;
+    h2{
+	    font-size: 18px;
+	    color: #555;
+	    margin-bottom: 22px;
+	}
+	li{
+	    float: left;
+	    width: 240px;
+	    height: 130px;
+	    margin-left: 10px;
+	    position: relative;
+
+	    i{
+		    background: #000;
+		    opacity: 0;
+		    width: 100%;
+		    height: 100%;
+		    position: absolute;
+		    top: 0;
+		    .transitionO;
+		}
+		&:hover i{
+		    opacity: 0.2;
+		}
+		img{
+		    width: 240px;
+		    height: 130px;
+		}
+		span{
+		    position: absolute;
+		    top: 0;
+		    width: 100%;
+		    text-align: center;
+		    color: #fff;
+		    font-size: 14px;
+		    padding-top: 88px;
+		}
+	}
+}
+.college {
+	.web{
+	    width: 500px;
+	    height: 270px;
+	    margin-left: 0;
+	    img{
+		    width: 500px;
+		    height: 270px;
+		}
+		span{
+		    padding-top: 180px;
+		    font-size: 20px;
+		    background: url(image/college1.png) no-repeat center 70px;
+		    background-size: 55px 84px;
+		}
+	}
+	.python{
+	    margin-bottom:10px;
+	    span{
+		    background: url(image/college2.png) no-repeat center 36px;
+		    .bg;
+		}
+	}
+	.go{
+	    margin-bottom:10px;
+	    span{
+		    background: url(image/college3.png) no-repeat center 36px;
+		    .bg;
+		}
+	}
+	.ios span{
+	    background: url(image/college4.png) no-repeat center 36px;
+	    .bg;
+	}
+	.more span{
+	    background: url(image/college5.png) no-repeat center 36px;
+	    .bg;
+	}
+}
+/*正文——会员课程*/
+.liChild{
+	margin-right: 0px;
+}
+.courseLiA{
+	font-size: 12px;
+	line-height: 22px;
+	text-align: center;
+}
+.transitionBg(@transition: background 1.5s){
+	-webkit-transition: @transition;
+	-moz-transition: @transition;
+	-o-transition: @transition;
+	transition: @transition;
+}
+.vip-course{
+    float: left;
+    margin-top:40px;
+
+    h2{
+	    font-size: 18px;
+	    color: #555;
+	    margin-bottom: 22px;
+	}
+
+	li{
+	    float: left;
+	    width: 158px;
+	    height: 155px;
+	    margin-right: 10px;
+	    border: @border;
+	    background: #fff;
+	    .BoxShadow;
+	    &:hover{
+		    .boxshadow;
+		}
+		&:nth-child(6){
+		    .liChild;
+		}
+		&:nth-child(12){
+			.liChild;
+		}
+		&:nth-child(n+7){
+		    margin-top: 10px;
+		}
+	}
+	.vip-all{
+	    display: inline-block;
+	    margin-top: 38px;
+	    width: 120px;
+	    height: 32px;
+	    line-height: 32px;
+	    border: 1px solid @color;
+	    .rounded-corners;
+	    font-size: 14px;
+	    color: @color;
+	    position: relative;
+	    left: 44%; 
+	    text-align: center;
+	    .transitionBg;
+
+	    &:hover{
+		    background: @color;
+		    color: #fff;
+		}
+	}
+}
+.vip-course li a{
+	img{
+	    width: 55px;
+	    height: 55px;
+	    margin-top: 25px;
+	    margin-left: 48px;
+	}
+	p{
+	    .courseLiA;
+	}
+	span{
+	    color: @color;
+	    .courseLiA;
+	    display: block;
+	    
+	}
+}
+/*正文——学员故事*/
+.story{
+    float: left;
+    margin-top: 40px;
+    margin-bottom:80px;
+    h2{
+	    font-size: 18px;
+	    color: #555;
+	    margin-bottom: 22px;
+	}
+	li{
+	    float: left;
+	    width: 320px;
+	    height: 200px;
+	    position: relative;
+	    margin-right: 20px;
+	    .BoxShadow;
+	    &:hover .story-text{
+		    .boxshadow;
+		}
+		&:last-child{
+		    .liChild;
+		}
+	}
+}
+.borderST{
+	content: "";
+    width: 0px;
+    height: 0px;
+    border: 11px solid #fff;
+    border-bottom: 0px;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    position: absolute;
+    top: 120px;
+    left: 55px;
+}
+.stotyP{
+	content: '';
+    display: inline-block;
+    width: 14px;
+    height: 10px;
+    background: url(image/storyicon.png) no-repeat center;
+    background-size: 14px 10px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.story .story-text{
+    background: #fff;
+    border: @border;
+    &:before{
+	    .borderST;
+	}
+	&:after{
+	    .borderST;
+	}
+	p{
+	    font-size: 12px;
+	    line-height: 20px;
+	    padding: 20px 25px;
+	    text-align: left;
+	    &:before{
+		    .stotyP;
+		}
+		&:after{
+		    .stotyP;
+		    top: 92px;
+		    left: 293px;
+		    .transform(rotate(180deg));
+		}
+	}
+}
+.story .story-info{
+    position: relative;
+    padding-left: 108px;
+    padding-top: 25px;
+    img{
+	    .rounded-corners(50%);
+	    width: 60px;
+	    height: 60px;
+	    position: absolute;
+	    top: 18px;
+	    left: 28px;
+	}
+	p{
+	    font-size: 12px;
+	    height: 24px;
+	    line-height: 24px;
+	    text-align: left;
+	}
+	span{
+	    display: block;
+	    height: 24px;
+	    line-height: 24px;
+	    color: #999;
+	    font-size: 12px;
+	    text-align: left;
+	}
+}
+@border:1px solid #e9e9e9;
+/*底部——上*/
+#footer{
+    width: 100%;
+    float: left;
+    background: #fff;
+    border-top: @border;
+    .footer-1{
+	    margin-top: 20px;
+	    margin-left: 8px;
+	    border-bottom: @border;
+	    width: 1000px;
+	    height: 175px;
+	    dl{
+		    width: 135px;
+		    height: 150px;
+		    float: left;
+		    margin-left: 23px;
+		}
+		dt{
+		    font-size: 14px;
+		    line-height: 27px;
+		    color: #808080;
+		}
+		dd{
+		    font-size: 12px;
+		    line-height: 25px;
+		    a{
+			    color: #999999;
+			    &:hover{
+				    color: @color;
+				}
+			}
+		}
+	}
+}
+
+#footer .footer-logo{
+    width: 160px;
+    height: 76px;
+    float: left;
+    margin-right: 25px;
+    img{
+	    width: 109px;
+	    height: 40px;
+	}
+	p{
+	    font-size: 12px;
+	    color: #999;
+	    margin-top: 20px;
+	}
+}
+.footerTEL{
+	width: 140px;
+    height: 30px;
+    border: 1px solid #eeeeee;
+    color: #888888;
+    line-height: 30px;
+    margin-bottom: 10px;
+    font-size: 13px;
+    cursor: pointer;
+    text-align:center;
+	position: relative;
+}
+#footer .footer-1 .tel{
+    width: 175px;
+    height: 119px;
+    float: left;
+    .tel-service{
+	    color: #808080;
+	    font-size: 14px;
+	    margin-bottom: 20px;
+	}
+	.down-ios{
+	    .footerTEL;
+	    background: url(image/down-ios.png) no-repeat left;
+	    background-size: 30px 30px;
+	    &:hover .submenu{
+		    display: block;
+		}
+	}
+	.down-android{
+		.footerTEL;
+	    background: url(image/down-and.png) no-repeat left;
+	    background-size: 30px 30px;
+		&:hover .submenu{
+		    display: block;
+		}
+	}
+}
+
+#footer .footer-1 .tel .submenu{
+    position: absolute;
+    top: -160px; 
+    right: -36px;
+    width: 120px;
+    display: none;
+    .animationListshow;
+    i{
+	    position: absolute;
+	    top: 143px;
+	    right: 50px;
+	    width: 15px;
+	    height: 15px;
+	    border-top: 1px solid #ececec;
+	    border-left: 1px solid #ececec;
+	    display: inline-block;
+	    background: #fff;
+	    z-index: -1;
+	    .transform(rotate(225deg));
+	}
+	img{
+	    width: 120px;
+	    height: 157px;
+	    margin-top: 0;
+	    border: none;
+	    .rounded-corners(0);
+	}
+}
+/*底部——下*/
+.siwe{
+	width: 20px;
+    height: 15px;
+    background-size: 20px 15px;
+    float: right;
+}
+#footer .footer-2{
+    float: left;
+    font-size: 12px;
+    color: #999;
+    width: 1000px;
+    text-align: center;
+    padding-top: 20px;
+    position: relative;
+    a{
+	    font-size: 12px;
+	    color: #999;
+	    &:hover{
+		    color: @color;
+		}
+	}
+	.weibo{
+	    background: url(image/sina.png) no-repeat;
+	    .siwe;
+	    position: absolute;
+	    right: 28px;
+	}
+	.wechat{
+	    background: url(image/wechat.png) no-repeat;
+	    .siwe;
+	}
+	.faith img{
+	    width: 60px;
+	    height: 21px;
+	    margin: 10px auto;
+	    display: block;
+	}
+}
+
+/*回到顶部*/
+.top-feed {
+    position: fixed;
+    left: 56%;
+    top: 43%;
+    margin-left: 444px;
+    display: none;
+    .to-top{
+	    background-image: linear-gradient(rgba(0,0,0,0.3) 0, rgba(0,0,0,0.3) 100%);
+	    width: 38px;
+	    height: 38px;
+	    cursor: pointer;
+	    .icon-mask {
+		    height: 40px;
+		    width: 40px;
+		    line-height: 40px;
+		    border: 0;
+		    color: #fff;
+		    .text {
+			    position: absolute;
+			    top: 3px;
+			    left: 3px;
+			    line-height: 16px;
+			    width: 32px;
+			    display: none;
+			}
+		}
+		span {
+		    display: block;
+		    height: 17px;
+		    width: 33px;
+		    margin: -28px auto;
+		    background: url(image/top.png) no-repeat -39px -9px;
+		}
+	}
+}
