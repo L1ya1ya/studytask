@@ -1,0 +1,129 @@
+/*新弹性盒子  横向  不等比*/
+.new-1{
+	display: -webkit-flex;
+	width: 900px;
+    background: #000000;
+
+}
+#a{
+	
+	height: 100px;
+	background: #ffcc99;
+	-webkit-flex:1;
+}
+#b{
+	
+	height: 100px;
+	background: #ffffcc;
+	-webkit-flex:2;
+}
+#c{
+	
+	height: 100px;
+	background: #99cccc;
+	-webkit-flex:3;
+}
+/*新弹性盒子  纵向 乱序*/
+.new-2{
+	display: -webkit-flex;
+	width: 900px;
+    -webkit-flex-direction:column;
+    background: #000000;
+
+}
+#d{
+	
+	height: 100px;
+	background: #ffcc99;
+	-webkit-flex:1;
+	-webkit-order:2;
+}
+#e{
+	
+	height: 100px;
+	background: #ffffcc;
+	-webkit-flex:2;
+	-webkit-order:3;
+}
+#f{
+	
+	height: 100px;
+	background: #99cccc;
+	-webkit-flex:3;
+	-webkit-order:1;
+}
+/*旧弹性盒子*/
+.old-1{
+	display: -webkit-box;
+	width: 900px;
+	height: 400px;
+    -webkit-box-orient:vertical;
+    -webkit-box-pack:center;
+    -webkit-box-align:center;
+    background: #e2e2df;
+}
+#aa{
+	width: 100px;
+	height: 100px;
+	background: #ffcc99;
+}
+#bb{
+	width: 200px;
+	height: 100px;
+	background: #ffffcc;
+	
+}
+#cc{
+	
+	height: 100px;
+	background: #99cccc;
+	
+}
+/*正常盒子*/
+.normal{
+	width: 100px;
+	height: 200px;
+	background: #ffcccc;
+	margin: auto;
+	padding: 20px;
+	border:5px solid #ffff99;
+}
+.content-1{
+	width: 80px;
+	height: 150px;
+	background:#ccccff;
+	margin: 0 auto;
+	margin-top: 20px;
+	overflow-y: scroll;
+}
+
+/*怪异盒子*/
+
+.weird{
+	width: 150px;
+	height: 250px;
+	background: #ffcccc;
+	margin: auto;
+	padding: 20px;
+	border:5px solid #ffff99;
+	box-sizing: border-box;
+}
+.content-2{
+	width: 80px;
+	height: 150px;
+	background:#ccccff;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+/*分栏*/
+.text{
+	background: #ffff99;
+	border:2px solid #999;
+	-webkit-columns:430px 3;
+	-webkit-column-rule-style:double;
+}
+img{
+	width: 420px;
+	height: 300px;
+}

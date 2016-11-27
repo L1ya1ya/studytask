@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>青岛家教网</title>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link rel="shortcut icon" type="image/x-icon" href="image/icon.ico"/>
+</head>
+<body>
+	<div class="big">
+<!--logo和菜单-->
+	<div class="top">
+		<div class="top_left">
+			<a href="http://www.qdjj.net/">
+			<img src="image/qdjjlogo.gif" title="返回首页"  alt="青岛家教网"></a>
+		</div>
+		<div class="top_right">
+			<a href="http://www.qdjj.net/member/register.asp">注册</a>
+			<a href="http://www.qdjj.net/login.asp">登录</a>
+			<a href="">收藏本站</a>
+		</div>
+	</div>
+<!--表单正体-->
+	<form action="#" method="get">
+		<table>
+        	<caption>新教员注册第二步</caption>
+		<tr>
+		    <td colspan="2">
+		    <p>
+		       &nbsp;&nbsp;您的注册资料越详细就越有利于家长和学员检索，也就越容易获得家长的预约，所以请您务必如实详细地填写。 <br>&nbsp;&nbsp;其中红色星号（<font color="#FF0000">*</font>）为必填。我们已对您的个人信息做保密处理，您的信息是安全的。<br>
+		       &nbsp;&nbsp;您选择的是<font color="#FF0000">大学生</font>身份,若有误请<a href="#">返回</a>更改
+			</p>
+		    </td>
+ 		</tr>
+<!--基本资料部分-->
+	  	<tr>
+		    <td colspan="2" id="title">
+		    <strong id="fenlei">基 本 资 料</strong>
+		    </td>
+	    </tr>
+		<tr>
+		    <td id="mc"><label for="name"><font color="#FF0000">*</font>真实姓名：</label></td>
+		    <td>
+		    <input type="text" id="name" autofocus="autofocus" required="required"><br>
+		    <span><font color="#FF0000">注意：</font>姓名应与身份证完全一致，本网站将对你的姓名严格保密，只显示您的姓，如“张教员”。此部分将在认证时严格审查，一经填写不得修改，与证件不符者将不能通过认证！
+		    </span>
+		    </td>
+		     
+		</tr>
+		<tr>
+		    <td id="mc"><label for="num">身份证/护照：</label></td>
+		    <td>
+		    <input type="text" id="num"> 
+		    <span>(此项将严格保密，不对外公开)</span>
+		    </td>
+		</tr>
+		<tr>
+		    <td id="mc"><label for="sex"><font color="#FF0000">*</font>性别：</label></td>
+		    <td>
+		    <select name="sex" id="sex" required="required">
+		    	<option value="0" selected>请选择....</option>
+		    	<option value="1">男</option>
+		    	<option value="2">女</option>
+		    </select>
+		    </td>
+		</tr>
+		<tr>
+		    <td id="mc"><label for="birth"><font color="#FF0000">*</font>出生日期：</label></td>
+		    <td>
+		    <input type="date" id="birth" required="required">
+		    </td>
+		</tr>
+		<tr>
+		    <td id="mc"><label for="zhuanye"><font color="#FF0000">*</font>专业：</label></td>
+		    <td>
+		    <input type="text" id="zhuanye" required="required"> <br>
+		    <span>请如实填写专业全名，以学生证为准。此部分将在认证时严格审查，与证件不符者将不能通过认证！</span>
+		    </td>
+		</tr>
+		<tr>
+		    <td id="mc"><label for="xueli"><font color="#FF0000">*</font>目前（最高）学历：</label></td>
+		    <td>
+		    <select id="xueli" required="required">
+		    	<option value="0" selected>请选择....</option>
+		    	<option value="1">大专以下</option>
+		    	<option value="2">大专</option>
+		    	<option value="3">本科</option>
+		    	<option value="4">硕士</option>
+		    	<option value="5">博士</option>
+		    </select>
+		    </td>
+		</tr>
+		<tr>
+		    <td id="mc"><label for="school"><font color="#FF0000">*</font>毕业/就读高校：</label></td>
+		    <td>
+		    <select id="school" required="required">
+		    	<option value="0" selected>请选择....</option>
+		        <option value="1">北大</option>
+		        <option value="2">清华</option>
+		        <option value="3">蓝翔</option>
+		        <option value="4">新东方</option>
+		        <option value="5">极客学院</option>
+		     </select>
+		    <span>若列表中无选项，请在文本框中填写</span>
+		    <input type="text">
+		    </td>
+		</tr>
+<!--家教信息部分-->
+		<tr>
+		    <td colspan="2" id="title">
+		    <strong id="fenlei">家 教 信 息</strong>
+		    </td>
+		</tr>
+		<tr>
+		    <td id="mc"><label for="putong"><font color="#FF0000">*</font>普通话：</label></td>
+		    <td>
+		    <input type="radio"  name="putong" id="putong" checked>标准
+		    <input type="radio"  name="putong" id="putong">一般
+		    <input type="radio"  name="putong" id="putong">较差
+		    </td>
+		</tr>
+		<tr>
+		    <td id="mc"><label for="waiyu"><font color="#FF0000">*</font>第一外语：</label></td>
+		    <td>
+		    <select id="waiyu">
+		    	<option value="0" selected>英语</option>
+		    	<option value="1">日语</option>
+		    	<option value="2">法语</option>
+		    </select>
+		    <select id="chengdu">
+		    	<option value="0" >精通</option>
+		    	<option value="1" selected>掌握</option>
+		    	<option value="2">基础</option>
+		    </select>
+		    </td>
+		</tr>
+		<tr>
+		    <td id="mc"><label for="erwaiyu">第二外语：</label></td>
+		    <td>
+		    <select id="erwaiyu">
+		    	<option value="0" selected>无</option>
+		    	<option value="1">日语</option>
+		    	<option value="2">法语</option>
+		    </select>
+		    <select id="chengdu">
+		    	<option value="0" >精通</option>
+		    	<option value="1" selected>掌握</option>
+		    	<option value="2">基础</option>
+		    </select>
+		    </td>
+		</tr>
+		<tr>
+		    <td id="mc"><label for="pinjia"><font color="#FF0000">*</font>自我描述与特长展示：</label></td>
+		    <td>
+		    <textarea id="pinjia" rows="6" cols="60" placeholder="全面展示你的实力和优势特长，增加你简历的含金量！例如：在比赛中得过什么重要奖项，获得过什么奖学金，取得什么样的高考成绩，有哪些能证明你能力的资格证书之类。 不得少于50字，不得超过500字。家长选择你的重要依据，请认真填写！"></textarea>
+		    </td>
+		</tr>
+		<tr>
+		    <td id="mc"><label for="xianmu"><font color="#FF0000">*</font>可辅导的科目（不超过10项）：</label></td>
+		    <td>
+		    <span>
+		    <font color="#FF0000">教员在选择中考、高考、雅思、新概念等有难度的科目时应量力而行，最好有实际辅导经验。</font>
+		    </span>
+	        <p><b>-----语数英-----</b></p>
+	        <input type="checkbox" name="kemu">小学语文
+	        <input type="checkbox" name="kemu">小学数学
+	        <input type="checkbox" name="kemu">小学英语<br>
+	        <input type="checkbox" name="kemu">初中语文
+	        <input type="checkbox" name="kemu">初中数学
+	        <input type="checkbox" name="kemu">初中英语<br>
+	        <input type="checkbox" name="kemu">高中语文
+	        <input type="checkbox" name="kemu">高中数学
+	        <input type="checkbox" name="kemu">高中英语<br>
+	        <p><b>-----乐器-----</b></p>
+	        <input type="checkbox" name="yueqi">钢琴
+	        <input type="checkbox" name="yueqi">吉他
+	        <input type="checkbox" name="yueqi">手风琴
+	        <input type="checkbox" name="yueqi">萨克斯
+	        <input type="checkbox" name="yueqi">爵士鼓
+	        <input type="checkbox" name="yueqi">古筝
+	        <input type="checkbox" name="yueqi">大提琴
+	        <input type="checkbox" name="yueqi">小提琴
+	        <p><b>-----语言-----</b></p>
+	        <input type="checkbox" name="yuyan">英语
+	        <input type="checkbox" name="yuyan">日语     
+	        <input type="checkbox" name="yuyan">法语
+	        <input type="checkbox" name="yuyan">西班牙语
+	        <input type="checkbox" name="yuyan">韩语
+	        <input type="checkbox" name="yuyan">葡萄牙语
+	        </td>
+		</tr>
+		<tr>
+		    <td id="mc"><label for="area"><font color="#FF0000">*</font>方便授课区域：</label></td>
+		    <td>
+		    <p><b>-----省份-----</b></p> 
+		    <input type="checkbox" name="Area">全中国
+		    <input type="checkbox" name="area">广东省
+		    <input type="checkbox" name="area">福建省    
+		    <input type="checkbox" name="area">辽宁省
+		    <input type="checkbox" name="area">浙江省
+		    </td>
+		</tr>
+		<tr>
+		    <td id="mc"><label for="fangsi"><font color="#FF0000">*</font>辅导方式：</label></td>
+		    <td>
+		    <input type="checkbox" name="fangsi">教员上门 
+		    <input type="checkbox" name="fangsi">学员上门    
+		    <input type="checkbox" name="fangsi">网上辅导
+		    <input type="checkbox" name="fangsi">可协商
+		    </td>
+		</tr>
+		<tr>
+		    <td id="mc"><label for="money"><font color="#FF0000">*</font>薪酬要求：</label></td>
+		    <td>
+		    <textarea name="money" cols="60" rows="6" id="money" placeholder="
+		    ">接受青岛家教网的课时费标准</textarea><br>
+		    <span>&nbsp;默认为接受青岛家教网的课时费标准（<a href="">查看详细的报酬标准</a>)，如果不同意，也可以在表中列出自己的薪酬要求，如：小学**元/时、小学奥数**元/时、初一**元/时、高三**元/时、钢琴**元/时、陪读**元/月。
+		    </span>
+		    </td>
+		</tr>
+		<tr>
+		    <td colspan="2" ><input id="button" type="submit" value="提 交"></td>
+		</tr>
+		</table>	
+	</form>
+	<div class="footer">
+   		<p>Copyright @ 2003～2008 版权所有 青岛家教网</p>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,180 @@
+html{height: 100%;}
+body,form{
+	font-size: 12px;
+    font-family: "arial";
+    min-width: 1200px;
+    min-height: 480px;
+    position: relative;
+    height: 100%;
+ }
+ul{
+	list-style: none;
+}
+a,span,p{
+	color:#999;
+}
+/*菜单栏*/
+.top{
+
+	float: right;
+
+}
+ul li{
+	float: left; 
+	font-weight: bold; 
+	margin-left: 20px; 
+	font-size: 13px;
+
+}
+.top li a{
+	color: #000000; 
+	display: block;
+}
+/*鼠标滑过普通菜单*/
+.top li a:hover{
+	color: #00c;
+}
+.top .more{
+   background: #3385ff;
+   width: 70px;
+   height: 22px;
+   line-height: 22px;
+   font-weight: normal;
+   text-align: center;
+   display: block;
+   text-decoration: none;
+   color:#fff;
+}
+#sezi,#denglu{
+	font-weight: normal;
+}
+
+/*鼠标滑过 “更多产品” */
+.top .more:hover{
+	color: #000000;
+	background: #f0f0f0;
+}
+ul li ul{
+	display: none;
+    position:absolute;
+    right: 1px;
+    text-align: center;
+    text-decoration: none;
+}
+ul li ul li{
+	float: none;
+    background-color:#f0f0f0;
+    width: 70px;
+    height: 60px;
+    text-align: center;
+    padding-top: 25px;
+
+}
+/*“更多产品”显示二级菜单*/
+ul li:hover ul{
+	display: block;
+	text-decoration: underline;
+}
+
+.top span{
+	font-size: 12px;
+	text-decoration: none;
+}
+
+/*中部*/
+.icon-user{
+	position: absolute;
+	left: 510px;
+	top: 0px;
+	z-index: 1;
+	background: url(../image/paizhao2.png) no-repeat; 
+	width: 20px; 
+	height: 20px; 
+}
+
+.icon-user:hover{
+	background: url(../image/paizhao1.png) no-repeat;
+}
+
+.content{
+    padding: 100px; 
+    text-align: center;
+}
+.content img{
+    width: 270px;
+    height: 129px;
+    position: absolute;
+    left: 35%;
+
+}
+.content span{
+	position: relative;
+    top: 138px;
+    left: -80px;
+}
+.content input{
+    width: 539px; 
+    height: 34px;
+}
+.content button{
+    width: 100px; 
+    height: 40px; 
+    background: #3385ff; 
+    border:none;
+    color: #FFF; 
+    font-size: 15px; 
+    vertical-align: center;
+    position: absolute;
+    top: 138px;
+    left: 66%;
+}
+
+/*底部*/
+.footer{
+	
+    width: 695px;
+    height: 100px;
+    margin-left: 350px;
+    position: absolute;
+    left: 50%
+    top:400px;
+    bottom: 35px;
+}
+
+.footer-left{
+	width: 277px;
+	height: 70px;
+	float: left;
+}
+.footer-left-1{
+	width: 122px;
+	height: 70px;
+	float: left;
+}
+.footer-left-2{
+	width: 122px;
+	height: 70px;
+	float: right;
+}
+.footer-text{
+	width: 52px;
+	height: 46px;
+	float: right;
+	text-align: center;
+	line-height: 20px;
+}
+.footer-right{
+	width: 333px;
+	height: 70px;
+	display: inline-block;
+	margin-left: 28px;
+	margin-top: -12px;
+		
+}
+.footer-right p{
+	height: 70px;
+	line-height: 20px;
+}
+.footer-right img{
+	vertical-align:middle;
+}

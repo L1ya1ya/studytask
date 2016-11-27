@@ -1,0 +1,98 @@
+body{
+	background: #0d7791;
+	font-size:12px;
+	font-family:"新宋体";
+}
+/*表头介绍区*/
+table p{line-height: 25px;}
+/*整个白底内容区域*/
+.big{
+	background: #fff;
+	border-radius: 30px;
+	width: 710px;
+	height: 100%;
+	border: 1px solid #fff;
+	margin: 0 auto;
+}
+/*logo和菜单部分*/
+.top{
+	margin: 5px 25px;
+}
+.top_left{
+	width: 180px;
+	float: left;
+}
+.top_right{
+	margin-top: 60px;
+	float: right;
+}
+.top_right a{
+	text-decoration: none;
+	margin:5px;
+	color: #FF0099;
+	font-size: 12px;
+	font-family: "微软雅黑";
+}
+/*表单正体*/
+caption{
+	font-size:18px;
+    font-weight:bold;
+    line-height:50px;
+}
+table,td,tr{
+	border: 1px solid #808080;
+}
+table{
+	width: 639px;
+	height: 800px;
+	margin: 0 auto;
+	border-collapse: collapse;
+}
+span{
+	color: #0000ff;
+	line-height: 20px;
+}
+#title{
+	background:#eee;
+}
+#fenlei{
+	color:#003399;
+}
+#mc{
+	width:136px;
+    text-align:right;
+}
+#button{
+	margin-left:276px;
+    margin-top:10px; 
+    margin-bottom:10px;
+	width:86px;
+	height:21px;
+	background: #0d7791;
+	border-style: none;
+}
+/*表单底部*/
+.footer{
+	text-align:center;
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

@@ -1,0 +1,54 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.box{
+	width: 300px;
+	height: 300px;
+	margin: 170px auto;
+}
+.top{
+	width: 100px;
+	height: 100px;
+	background:#FF3333;
+	box-shadow: 3px 2px 12px rgba(0,0,0,.5);
+	margin: 0 auto;
+
+}/*红*/
+.left{
+	width: 100px;
+	height: 100px;
+	background: #3343FF;
+	position: absolute;
+	left: -100px;
+    top: 0px;
+	box-shadow: 3px 2px 12px rgba(0,0,0,.5);
+}/*蓝*/ 
+.bottom{
+	width: 100px;
+	height: 100px;
+	background: #FFEF33;
+	position: absolute;
+	box-shadow: 3px 2px 12px rgba(0,0,0,.5);
+	margin-top: 100px;
+	margin:100px;
+
+}/*黄*/
+.right{
+	width: 100px;
+	height: 100px;
+	background: #3FE814;
+	position: absolute;
+	left: 100px;
+    top: 0px;
+    box-shadow: 3px 2px 12px rgba(0,0,0,.5);
+}/*绿*/
+.mid{
+	width: 100px;
+	height: 100px;
+	background:url(../image/01.png) no-repeat center;
+    background-size: 24px 24px;
+	position: relative;
+	margin: 0 auto;
+	box-shadow: 0px 0px 5px rgba(0,0,0,.5);
+}
