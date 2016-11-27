@@ -1,0 +1,23 @@
+/*导航栏*/
+.nav>li>a:hover, .nav>li>a:focus {
+    text-decoration: none;
+    background-color: #117faf;
+    color: #fff;
+}
+/*banner*/
+.jumbotron {
+	height: 328px;
+    background:url(bg.jpg) no-repeat;
+    background-position: -12px;
+    background-size: 100% 328px;
+}
+/*底部*/
+.footer{
+	padding-top: 40px;
+    padding-bottom: 40px;
+    margin-top: 40px;
+    border-top: 1px solid #eee;
+}
+.footer p{
+	text-align: center;
+}
