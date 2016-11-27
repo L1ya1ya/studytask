@@ -1,0 +1,149 @@
+.container{
+    margin-left: 50px;
+}
+/*修改导航颜色*/
+.navbar-default {
+    background-color: #ffd777;
+    border-color: #c9aa5f;
+    border-radius: 0;
+}
+
+/*修改导航logo区*/
+.navbar-default .navbar-brand {
+    color: #fff;
+    font-weight: 700;
+}
+.form-control{
+	border-color: #c9aa5f;
+}
+.navbar-nav {
+    text-align: left;
+    margin-left: 28px;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus{
+    background: #fff;
+}
+.navbar-nav li{
+    margin-left: -10px;
+}
+.navbar-nav li:hover{
+    background: #fff;
+
+}
+/*调整菜单图标位置*/
+.navbar-toggle{
+    float: left;
+    background-color: #ffd777;
+/*    display: block;*/
+}
+.navbar-default .navbar-toggle:hover{
+	background-color: #ffd777;
+}
+.navbar-default .navbar-toggle {
+    border-color: #ffd777;
+}
+/*侧边导航栏*/
+#sideBar{
+	width: 210px;
+	height: 100%;
+    position: fixed;
+    top: 52px;
+    left: 0px;
+    background: #424a5d;
+    transition: left 0.5s ease;
+}
+#sideBar .my{
+	text-align: center;
+	text-decoration: none;
+}
+#sideBar .my img{
+	width: 60px;
+	border-radius:50%;
+	margin: 28px 75px;
+}
+#sideBar .my h5{
+	font-size: 18px;
+    margin-top: -15px;
+    margin-bottom: -3px;
+    color: #fff;
+}
+#sideBar ul{
+	list-style: none;
+	margin-top: 15px;
+}
+#sideBar ul li{
+	margin-bottom: 5px;
+    margin-left: -20px;
+    margin-right: 20px;
+}
+
+#sideBar ul a{
+	color: #aeb2b7;
+    text-decoration: none;
+    display: block;
+    padding: 15px 0 15px 10px;
+    font-size: 14px;
+    font-weight: bold;
+
+}
+#sideBar ul a:hover{
+	background: #68dff0;
+    color: #fff;
+    display: block;
+    transition: all 0.3s ease;
+}
+/*内容区域*/
+.main-content{
+    margin-left: 210px;
+    min-height: 100%;
+    overflow: hidden;
+    transition: margin-left 0.5s ease;
+}
+.table-responsive{
+    margin: 0 15px;
+    transition: margin 0.5s ease;
+    overflow-x:hidden; 
+}
+.table-responsive h2{
+    text-align: center;
+    font-weight: 600;
+    color: #333
+}
+/*分页*/
+.pages{
+	padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #eff3f8;
+    margin: 0;
+}
+label{
+	font-size: 13px;
+    font-weight: normal;
+    margin-left: 15px;
+}
+.page-last{
+    background-color: #eff3f8;
+    border-bottom: 1px solid #DDD;
+    margin: -20px 14px 0 14px;
+    transition: margin 0.5s ease;
+}
+nav{
+    text-align: right;
+}
+
+@media (max-width: 768px){
+    #sideBar {
+        left: -210px;
+    }
+    .main-content{
+        margin-left: 0px
+    }
+    .table-responsive {
+        margin: 0;
+}
+    .page-last{
+        margin: 0;
+    }
+
+    
+}
