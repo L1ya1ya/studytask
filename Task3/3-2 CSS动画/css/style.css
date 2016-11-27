@@ -1,0 +1,273 @@
+
+.bird {
+  width: 250px;
+  height: 240px;
+  background-color: #f2b22e;
+  border-radius: 60% 60% 70% 70%; 
+  position: absolute;
+  left: 50%;
+  margin-left: -105px;
+  top: 100px;
+}
+/*————————耳朵——————————*/
+.ear{
+  position: absolute;
+}
+.left-ear,
+.right-ear{
+  position: absolute;
+  left: 20px;
+  top: 4px;
+  width: 35px;
+  height: 55px;
+  border-radius: 10%;
+  background: #f2b22e;
+  -webkit-transform: rotate(16deg);
+  -moz-transform: rotate(16deg);
+}
+.right-ear{
+  left: 195px;
+  -webkit-transform: rotate(-16deg);
+  -moz-transform: rotate(-16deg);
+
+}
+/*————————肚皮——————————*/
+.dupi {
+  position: absolute;
+  width: 160px;
+  height: 100px;
+  border-radius: 60% 60% 70% 70%;
+  left: 50%;
+  margin-left: -80px;
+  bottom: 0;
+  background-color: #f3cc74;
+  background-size: 30px 30px;
+}
+/*————————眼睛——————————*/
+.left-eye,
+.right-eye {
+  position: absolute;
+  top: 55px;
+  left: 25px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #fff;
+  z-index: 3;
+}
+.right-eye{
+  left: 145px;
+}
+.left-eye .left-black,
+.right-eye  .right-black{
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #000;
+}
+/*————————嘴巴——————————*/
+.mouse {
+  position: absolute;
+  left: 104px;
+  top: 113px;
+  width: 0;
+	height: 0;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-top: 25px solid #e27326;
+
+}
+/*————————翅膀——————————*/
+.wings {
+  position: absolute;
+  height: 100px;
+  width: 40px;
+  background: #f2b22e;
+  border-radius: 50%;
+  z-index: -1;
+  top: 90px;
+}
+
+.left-wing {
+  -webkit-transform: rotate(50deg);
+  -moz-transform: rotate(50deg);
+  left: -5px;
+}
+
+.right-wing {
+  -webkit-transform: rotate(-50deg);
+  -moz-transform: rotate(-50deg);
+  right: -5px;
+}
+/*————————爪——————————*/
+.left-foot, .right-foot {
+  position: absolute;
+  bottom: 1px;
+  height: 25px;
+  width: 12px;
+  background-color: #e27326;
+  border-radius: 50%;
+}
+
+.left-foot {
+  left: 45px;
+}
+.right-foot {
+  right: 45px;
+}
+
+.left-foot:before, .right-foot:before, 
+.left-foot:after, .right-foot:after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  background: #e27326;
+  width: 12px;
+}
+
+.left-foot:before, 
+.right-foot:before {
+  left: -8px;
+}
+.left-foot:after, 
+.right-foot:after {
+  right: -8px;
+}
+.left-foot:before, 
+.right-foot:after {
+  bottom: 8px;
+  height: 24px;
+}
+.left-foot:after, 
+.right-foot:before {
+  bottom: 0px;
+  height: 20px;
+}
+/*———————————————动画——————————————*/
+/*—————————————眼珠————————————*/
+.left-black,
+.right-black{
+  -webkit-animation: blackeye 5s ease-in infinite;
+  -moz-animation: blackeye 5s ease-in infinite;
+}
+@-webkit-keyframes blackeye{
+0%,20%,100%{
+  -webkit-transform: translateX(0px);
+}
+30%,50%{
+  -webkit-transform: translate3d(15px,-12px,0);
+}
+70%,90%{
+  -webkit-transform: translate3d(-15px,-12px,0);
+}
+}
+
+@-moz-keyframes blackeye{
+0%,20%,100%{
+  -moz-transform: translateX(0px);
+}
+30%,50%{
+  -moz-transform: translate3d(15px,-12px,0);
+}
+70%,90%{
+  -moz-transform: translate3d(-15px,-12px,0);
+}
+}
+/*—————————————翅膀————————————*/
+.left-wing{
+  -webkit-animation:left-wing .8s ease-in-out infinite;
+  -moz-animation:left-wing .8s ease-in-out infinite;
+}
+
+.right-wing{
+  -webkit-animation:right-wing .8s ease-in-out infinite;
+  -moz-animation:right-wing .8s ease-in-out infinite;
+}
+
+@-webkit-keyframes left-wing{
+0%,50%,100%{
+  -webkit-transform: rotate(50deg);
+}
+30%{
+  -webkit-transform: rotate(37deg) translateX(1px);
+}
+}
+
+@-webkit-keyframes right-wing{
+0%,50%,100%{
+  -webkit-transform: rotate(-50deg);
+}
+80%{
+  -webkit-transform: rotate(-37deg) translateX(-1px);
+}
+}
+/*火狐兼容*/
+@-moz-keyframes left-wing{
+0%,50%,100%{
+  -moz-transform: rotate(50deg);
+}
+30%{
+  -moz-transform: rotate(37deg) translateX(1px);
+}
+}
+
+}
+@-moz-keyframes right-wing{
+0%,50%,100%{
+  -moz-transform: rotate(-50deg);
+}
+80%{
+  -moz-transform: rotate(-37deg) translateX(-1px);
+}
+}
+/*—————————————————心————————————————*/
+.heart{
+  position: relative;
+  left: -193px;
+  top: -310px;
+  width: 100px;
+  height: 100px;
+  background: #F44336;
+  margin: 400px auto 0 auto;
+  -webkit-transform-origin: center;
+  -webkit-transform: rotate(20deg);
+  -moz-transform-origin: center;
+  -moz-transform: rotate(20deg);
+}
+.heart:before,
+.heart:after{
+  content: "";
+  position: absolute;
+  left: -50px;
+  background: #F44336;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.heart:after{
+  left: 0;
+  top: -50px;
+}
+/*———————————————动画——————————————*/
+.heart{
+  -webkit-animation:pulse 1.5s ease infinite;
+  -moz-animation:pulse 1.5s ease infinite;
+}
+@-webkit-keyframes pulse{
+  0%,100%{
+}
+  50%{
+  -webkit-transform:scale(0.9);
+}
+}
+
+@-moz-keyframes pulse{
+  0%,100%{
+}
+  50%{
+  -moz-transform:scale(0.9);
+}
+}

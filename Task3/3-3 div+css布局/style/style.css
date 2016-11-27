@@ -1,0 +1,89 @@
+*{
+	margin:0;
+	padding: 0;
+}
+/*圣杯布局*/
+.layout{
+	background:#007b94;
+	height: 100px;
+	padding: 0 150px 0 150px;
+	color: #fff;
+}
+.mid{
+	background: #c1da75;
+	float: left;
+	width: 100%;
+}
+.left{
+	background: #d60068;
+	width: 150px;
+	position: relative;
+	left: -150px;
+	float: left;
+	margin-left: -100%;	
+}
+.right{
+	background: #00ac96;
+	float: left;
+	width: 150px;
+	position: relative;
+	left: 150px;
+	margin-left: -150px;	
+}
+
+/*双飞翼布局*/
+.layout-1{
+	background:#007b94;
+	width: 600px;
+	height: 100px;
+	padding: 0 150px 0 150px;
+	color: #fff;
+}
+.inner{
+	margin: 0 150px;
+}
+.mid-1{
+	background: #c1da75;
+	float: left;
+	width: 100%;
+}
+.left-1{
+	background: #d60068;
+	width: 150px;
+	float: left;
+	margin-left: -100%;	
+}
+.right-1{
+	background: #00ac96;
+	float: left;
+	width: 150px;
+	margin-left: -150px;	
+}
+/*双飞翼布局——消除padding，设定宽度*/
+.layout-2{
+	background:#007b94;
+	width: 800px;
+	height: 100px;
+	color: #fff;
+}
+.inner{
+	margin: 0 150px;
+}
+.mid-2{
+	background: #c1da75;
+	float: left;
+	width: 100%;
+
+}
+.left-2{
+	background: #d60068;
+	width: 150px;
+	float: left;
+	margin-left: -100%;	
+}
+.right-2{
+	background: #00ac96;
+	float: left;
+	width: 150px;
+	margin-left: -150px;	
+}

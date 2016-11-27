@@ -1,0 +1,107 @@
+.view{
+	width: 160px;
+	height: 160px;
+	margin: 80px auto 0 auto;
+	text-align: center;
+
+	
+}
+.box{
+	animation-name:magic;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-duration: 10s;
+	transform-style:preserve-3d;
+	perspective-origin: 30% 75%; 
+	transform-origin:80px 80px 0;
+	margin-top: 120px;
+	position: relative;
+}
+
+@keyframes magic{
+	0%{
+		transform:rotateX(0deg) rotateY(0deg);	
+	}
+	
+	100%{
+		transform:rotateX(360deg) rotateY(360deg);
+	}
+}
+
+.box div{
+	position: absolute;
+	width: 160px;
+	height: 160px;
+	border: 3px solid rgba(216, 34, 13, 0.8);
+    color: rgba(233, 30, 99, 0.75);
+    background: rgba(255,242,173,0.8);
+	text-align: center;
+	font-size: 130px;
+}
+
+.box .A{
+	transform: translateZ(80px);
+}
+.box .B{
+	transform: rotateX(-90deg)translateZ(80px);
+}
+.box .C{
+	transform:rotateX(90deg)translateZ(80px);
+}
+.box .D{
+	transform:rotateZ(90deg)translateZ(-80px);
+}
+.box .E{
+	transform:rotateX(-90deg)rotateY(90deg)translateZ(-80px);
+}
+.box .F{
+	transform:rotateY(90deg)translateZ(80px);
+}
+/*-------------鼠标滑过，开花效果-------------------*/
+.box:hover .A{
+	transform: translateZ(120px);
+}
+.box:hover .B{
+	transform: rotateX(-90deg)translateZ(120px);
+}
+.box:hover .C{
+	transform:rotateX(90deg)translateZ(120px);
+}
+.box:hover .D{
+	transform:rotateZ(90deg)translateZ(-120px);
+}
+.box:hover .E{
+	transform:rotateX(-90deg)rotateY(90deg)translateZ(-120px);
+}
+.box:hover .F{
+	transform:rotateY(90deg)translateZ(120px);
+}
+/*-------------------------中间小盒----------------------------*/
+.box span{
+	width: 60px;
+	height: 60px;
+	border:1px #000 solid;
+	background:rgba(209,186,217,0.5);
+	position: absolute;
+	top: 50px;
+	left: 50px;
+}
+
+.box .Aa{
+	transform: translateZ(30px);
+}
+.box .Bb{
+	transform: rotateX(-90deg)translateZ(30px);
+}
+.box .Cc{
+	transform:rotateX(90deg)translateZ(30px);
+}
+.box .Dd{
+	transform:rotateZ(90deg)translateZ(-30px);
+}
+.box .Ee{
+	transform:rotateX(-90deg)rotateY(90deg)translateZ(-30px);
+}
+.box .Ff{
+	transform:rotateY(90deg)translateZ(30px);
+}
