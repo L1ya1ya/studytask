@@ -1,0 +1,33 @@
+*{
+	margin: 0;
+    padding: 0;
+  }
+table{
+       border-collapse:collapse;
+       width: 490px;
+       margin: 100px auto;
+       text-align: center;
+       line-height: 30px;
+       font-family: "微软雅黑";
+     }
+table caption{
+	           font-size: 28px;
+	           font-family: "微软雅黑";
+	           font-weight: bold;
+	           line-height: 60px;
+             }
+
+table,
+tr, 
+td, 
+th{
+   border:1px solid #fca5c2;;
+  }
+
+#b{
+	background: #e61c64;
+  }
+
+.double{
+	    background:#EAF2D3;
+       }
